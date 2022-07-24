@@ -2610,7 +2610,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("masterflow/app")["default"].create({"name":"masterflow","version":"0.0.0+6f953b48"});
+            require("masterflow/app")["default"].create({"name":"masterflow","version":"0.0.0+340e5e8d"});
           }
         
 //# sourceMappingURL=masterflow.map
