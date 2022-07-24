@@ -13094,22 +13094,15 @@ define("@ember/-internals/metal/index", ["exports", "@ember/-internals/meta", "@
   */
 
 });
-define("@ember/-internals/overrides/index", [], function () {
+define("@ember/-internals/overrides/index", ["exports"], function (_exports) {
   "use strict";
 
-  function once(callback) {
-    var called = false;
-    return function () {
-      if (called) {
-        return null;
-      } else {
-        called = true;
-        return callback(...arguments);
-      }
-    };
-  }
-
-  undefined;
+  Object.defineProperty(_exports, "__esModule", {
+    value: true
+  });
+  _exports.onEmberGlobalAccess = void 0;
+  var onEmberGlobalAccess;
+  _exports.onEmberGlobalAccess = onEmberGlobalAccess;
 });
 define("@ember/-internals/owner/index", ["exports", "@glimmer/owner"], function (_exports, _owner) {
   "use strict";
