@@ -4,7 +4,7 @@ module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'masterflow',
     environment,
-    rootURL: 'https://ecappmakers.github.io/masterflow-dem/',
+    rootURL: 'https://ecappmakers.github.io/',
     locationType: 'history',
     EmberENV: {
       FEATURES: {
