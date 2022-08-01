@@ -1,5 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  isloggedin: true,
+  percentage: '25',
+  text: 'Sample Text',
+  color: 'bg-info',
 });
