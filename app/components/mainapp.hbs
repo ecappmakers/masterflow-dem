@@ -1,8 +1,10 @@
 {{#if this.isloggedin}}
-  <html lang="en">
+<html lang="en">
+
 <head>
     {{app-header}}
 </head>
+
 <body>
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         {{top-bar}}
@@ -11,28 +13,43 @@
             <div class="app-main__outer">
                 <div class="app-main__inner">
                     {{page-header}}
-                   <div class="row">
+                    <div class="row">
                         <div class="col-md-6 col-xl-4">
-                            {{header-card bgcolor="midnight-bloom" textcolor="white" heading="Hello world" subheading="Hey there" value="1205"}}
+                            {{header-card bgcolor="midnight-bloom" textcolor="white" heading="Hello world"
+                            subheading="Hey there" value="1205"}}
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            {{header-card bgcolor="arielle-smile" textcolor="white" heading="Clients" subheading="Total Clients Profit" value="1896"}}
+                            {{header-card bgcolor="arielle-smile" textcolor="white" heading="Clients" subheading="Total
+                            Clients Profit" value="1896"}}
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            {{header-card bgcolor="grow-early" textcolor="white" heading="Followers" subheading="People Interested" value="23%"}}
+                            {{header-card bgcolor="grow-early" textcolor="white" heading="Followers" subheading="People
+                            Interested" value="23%"}}
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-xl-4">
-                            {{header-card heading="Total Orders" subheading="Last year expenses" numcolor="success" value="1896"}}
+                            {{header-card heading="Total Orders" subheading="Last year expenses" numcolor="success"
+                            value="1896"}}
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            {{header-card heading="Products Sold" subheading="Revenue streams" numcolor="warning" value="$3M"}}
+                            {{header-card heading="Products Sold" subheading="Revenue streams" numcolor="warning"
+                            value="$3M"}}
                         </div>
                         <div class="col-md-6 col-xl-4">
-                            {{header-card heading="Followers" subheading="People Interested" numcolor="danger" value="45.9%"}}
+                            {{header-card heading="Followers" subheading="People Interested" numcolor="danger"
+                            value="45.9%"}}
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            {{bar-chart}}
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        {{pie-chart}}
+                    </div>
+
                     <div class="row">
                         <div class="col-md-12">
                             {{mf-table }}
@@ -60,8 +77,9 @@
     </div>
     <script type="text/javascript" src="./assets/scripts/main.js"></script>
 </body>
+
 </html>
 
 {{else}}
-    {{login}}
+{{login}}
 {{/if}}
