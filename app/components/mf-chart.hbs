@@ -1,0 +1,40 @@
+<div class="mb-3 card">
+    <div class="card-header-tab card-header">
+        <div class="card-header-title">
+            <i class="header-icon lnr-rocket icon-gradient bg-tempting-azure"> </i>
+            {{this.chartTitle}}
+        </div>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane fade active show" id="tab-eg-55">
+            <div class="widget-chart p-3">
+                <div style="height: 350px">
+                    <div id="chart"></div>
+                </div>
+            </div>
+            <div class="pt-2 card-body">
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(function () {
+        var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Work', 11],
+            ['Eat', 2],
+            ['Commute', 2],
+            ['Watch TV', 2],
+            ['Sleep', 7]
+        ]);
+        var options = {
+            title: 'My Daily Activities'
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('chart'));
+        chart.draw(data, options);
+    });
+
+
+
+</script>
